@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{532CE859-39C2-46F1-91F4-D90164B555B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NalburOtomasyonu</RootNamespace>
+    <AssemblyName>NalburOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NalburOtomasyonu.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calisanduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanduzenle.Designer.cs">
+      <DependentUpon>calisanduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calisanekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanekle.Designer.cs">
+      <DependentUpon>calisanekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calisanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanlar.Designer.cs">
+      <DependentUpon>calisanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calisansil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisansil.Designer.cs">
+      <DependentUpon>calisansil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo.Designer.cs">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depoduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depoduzenle.Designer.cs">
+      <DependentUpon>depoduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="depoekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="depoekle.Designer.cs">
+      <DependentUpon>depoekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deposil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deposil.Designer.cs">
+      <DependentUpon>deposil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fiyat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiyat.Designer.cs">
+      <DependentUpon>fiyat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakit.Designer.cs">
+      <DependentUpon>nakit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakitduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakitduzenle.Designer.cs">
+      <DependentUpon>nakitduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nakitsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nakitsil.Designer.cs">
+      <DependentUpon>nakitsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="santiyeduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="santiyeduzenle.Designer.cs">
+      <DependentUpon>santiyeduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="santiyeekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="santiyeekle.Designer.cs">
+      <DependentUpon>santiyeekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="santiyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="santiyeler.Designer.cs">
+      <DependentUpon>santiyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="santiyesil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="santiyesil.Designer.cs">
+      <DependentUpon>santiyesil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satis.Designer.cs">
+      <DependentUpon>satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokduzenle.Designer.cs">
+      <DependentUpon>stokduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokekle.Designer.cs">
+      <DependentUpon>stokekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoksil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoksil.Designer.cs">
+      <DependentUpon>stoksil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toptanci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toptanci.Designer.cs">
+      <DependentUpon>toptanci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toptanciduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toptanciduzenle.Designer.cs">
+      <DependentUpon>toptanciduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toptanciekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toptanciekle.Designer.cs">
+      <DependentUpon>toptanciekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="toptancisil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toptancisil.Designer.cs">
+      <DependentUpon>toptancisil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İntroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İntroForm.Designer.cs">
+      <DependentUpon>İntroForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calisanduzenle.resx">
+      <DependentUpon>calisanduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanekle.resx">
+      <DependentUpon>calisanekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanlar.resx">
+      <DependentUpon>calisanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisansil.resx">
+      <DependentUpon>calisansil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo.resx">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depoduzenle.resx">
+      <DependentUpon>depoduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depoekle.resx">
+      <DependentUpon>depoekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposil.resx">
+      <DependentUpon>deposil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fiyat.resx">
+      <DependentUpon>fiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakit.resx">
+      <DependentUpon>nakit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakitduzenle.resx">
+      <DependentUpon>nakitduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nakitsil.resx">
+      <DependentUpon>nakitsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="santiyeduzenle.resx">
+      <DependentUpon>santiyeduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="santiyeekle.resx">
+      <DependentUpon>santiyeekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="santiyeler.resx">
+      <DependentUpon>santiyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="santiyesil.resx">
+      <DependentUpon>santiyesil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satis.resx">
+      <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokduzenle.resx">
+      <DependentUpon>stokduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokekle.resx">
+      <DependentUpon>stokekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stoksil.resx">
+      <DependentUpon>stoksil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toptanci.resx">
+      <DependentUpon>toptanci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toptanciduzenle.resx">
+      <DependentUpon>toptanciduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toptanciekle.resx">
+      <DependentUpon>toptanciekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toptancisil.resx">
+      <DependentUpon>toptancisil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İntroForm.resx">
+      <DependentUpon>İntroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_7ae0d50f-d644-4974-aa00-ed08b7f7988b.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_da235efe-fe60-4df8-b7ca-680c9be58ad2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_b9c0ef71-df18-45c5-be88-98c96e342181.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1db96aa7-3975-48af-a59c-23d8b312da6c.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_288eb129-f4d9-4fab-a0cf-d5144dc8f810.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_7df2ba31-6e88-493e-a409-47c08bbafa4e.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_49a0c7e0-ebaa-42eb-9a28-5415cad404a6.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_288eb129-f4d9-4fab-a0cf-d5144dc8f8101.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1695df0e-9a9d-48a4-bb37-5a8013dcee2e.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_b9c0ef71-df18-45c5-be88-98c96e3421811.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_642cd0e4-65f3-4008-bd03-903cb3006275.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_a123ab86-3dbf-4ddd-8b16-14c9e44c9120.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1db96aa7-3975-48af-a59c-23d8b312da6c1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_da235efe-fe60-4df8-b7ca-680c9be58ad21.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_7ae0d50f-d644-4974-aa00-ed08b7f7988b1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_3022a51e-6402-4762-8dc8-576913fdbd4f.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emlak-yonetmeligi-emlakcinin-gundeminde.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
